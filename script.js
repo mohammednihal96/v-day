@@ -11,15 +11,17 @@ const gifStages = [
 
 const noMessages = [
     "No",
-    "Are you positive? 🤔",
-    "Pookie please... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
-    "Please??? 💔",
-    "Don't do this to me...",
-    "Last chance! 😭",
-    "You can't catch me anyway 😜"
+    "Are you sure? Like… 100% sure? 🤨",
+    "Be serious right now 😭",
+    "My cat is watching you… 🐱",
+    "This is getting awkward…",
+    "I already told my mom you’d say yes 🥲",
+    "The universe is judging you ✨",
+    "My heart just cracked a little 💔",
+    "Okay but imagine how cute we’d be…",
+    "Last chance before I dramatically faint 😵‍💫"
 ]
+
 
 const yesTeasePokes = [
     "try saying no first... I bet you want to know what happens 😏",
@@ -143,3 +145,14 @@ function runAway() {
     noBtn.style.top = `${randomY}px`
     noBtn.style.zIndex = '50'
 }
+// Add dramatic screen shake after 3 clicks
+if (noClickCount === 3) {
+    document.body.style.animation = "shake 0.5s";
+    setTimeout(() => document.body.style.animation = "", 500);
+}
+
+// At 6 clicks, make background slightly pink
+if (noClickCount === 6) {
+    document.body.style.background = "linear-gradient(135deg, #ffd6e8, #ffe6f2)";
+}
+
