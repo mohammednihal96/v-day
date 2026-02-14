@@ -24,11 +24,12 @@ const noMessages = [
 
 
 const yesTeasePokes = [
-    "try saying no first... I bet you want to know what happens 😏",
-    "go on, hit no... just once 👀",
-    "you're missing out 😈",
-    "click no, I dare you 😏"
+    "waittt… don’t rush it 😌",
+    "say no once… for character development 😏",
+    "I promise it gets interesting 👀",
+    "trust me… you’ll like the ending 💕"
 ]
+
 
 let yesTeasedCount = 0
 
@@ -75,7 +76,11 @@ function handleYesClick() {
         showTeaseMessage(msg)
         return
     }
+    createHearts()
+setTimeout(() => {
     window.location.href = 'yes.html'
+}, 1500)
+
 }
 
 function showTeaseMessage(msg) {
@@ -155,4 +160,19 @@ if (noClickCount === 3) {
 if (noClickCount === 6) {
     document.body.style.background = "linear-gradient(135deg, #ffd6e8, #ffe6f2)";
 }
+function createHearts() {
+    for (let i = 0; i < 20; i++) {
+        const heart = document.createElement("div");
+        heart.innerHTML = "💖";
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = window.innerHeight + "px";
+        heart.style.fontSize = Math.random() * 20 + 20 + "px";
+        heart.style.animation = "floatUp 2s ease-out forwards";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 2000);
+    }
+}
+
 
