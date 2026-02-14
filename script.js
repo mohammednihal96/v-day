@@ -11,13 +11,13 @@ const gifStages = [
 
 const noMessages = [
     "No",
-    "Are you sure? Like… 100% sure? 🤨",
-    "Be serious right now 😭",
-    "My cat is watching you… 🐱",
+    "Are you sure, Kadhu? Like… 100% sure? 🤨",
+    "Be so fr right now 😭",
+    "I just want to make you smile 🥺",
     "This is getting awkward…",
-    "I already told my mom you’d say yes 🥲",
+    "My mom already likes you ",
     "The universe is judging you ✨",
-    "My heart just cracked a little 💔",
+    "Vaava's heart just cracked a little 💔",
     "Okay but imagine how cute we’d be…",
     "Last chance before I dramatically faint 😵‍💫"
 ]
