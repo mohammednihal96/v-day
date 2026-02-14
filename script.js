@@ -149,6 +149,8 @@ function runAway() {
     noBtn.style.left = `${randomX}px`
     noBtn.style.top = `${randomY}px`
     noBtn.style.zIndex = '50'
+    noBtn.style.transform = `rotate(${Math.random() * 360}deg)`
+
 }
 // Add dramatic screen shake after 3 clicks
 if (noClickCount === 3) {
